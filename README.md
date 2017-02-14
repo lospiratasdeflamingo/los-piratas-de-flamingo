@@ -1,12 +1,6 @@
 Los Piratas de Flamingo
 =======================
 
-Costa Rican tourist business.
+El servicio de Github mantiene todo el codigo e imagenes para el sitio de lospiratasdeflamingo.com
 
-Stack used:
------------
--Bootstrap
--Github
-
-### Online demon ###
-https://ahernandez16.github.io/los-piratas-de-flamingo/
+Detalles para hacer cambios se pondran aqui...
