@@ -1,0 +1,350 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+hr {
+  border: 1px solid #F00;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+
+/* CUSTOM CSS */
+.box1{
+  background-color: #fff;
+  color: #000;
+}
+.box2{
+  background-color: #fff;
+  color: #000;
+}
+
+.space {
+  margin-top: 60px;
+}
+
+
+.trip {
+  position: absolute;
+  top: 30%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+.trip-advisor {
+  height: 350px;
+}
+.contact-info {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 10%);
+  width: 350px;
+}
+
+.social {
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+  transform: translate(-50%, 10%);
+  width: 350px;
+}
+
+/* IMAGE GRID CONTENT
+-------------------------------------------------- */
+
+/* Adds spacing between images */
+
+.main {
+  margin-top: 30px;
+}
+.img-responsive {
+  margin-bottom: 30px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketing {
+  background-color: #000;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-divider1 {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.service-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* OTHER
+-----------------------------------------------------*/
+
+
+#video {
+  max-width: 700px;
+  margin: 30px auto;
+  width: 100%;
+  position:relative;
+}
+
+.delimitador {
+  max-width: 800px;
+  margin: auto;
+}
+
+.video_cont {
+  height:0px;
+  width:100%;
+  max-width: 700px; /* Asi establecemos el ancho maximo (si lo queremos) */
+  padding-top:56.25%; /* Relacion: 16/9 = 56.25% */
+  position:relative;
+}
+.video_cont iframe {
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0px;
+  left:0px;
+}
+
+/* OTHER
+-----------------------------------------------------*/
+
+html {
+  font-size: 1.2em;
+}
+body {
+  padding: 25px;
+  text-align: center;
+}
+
+
+
+/* Wrapper */
+.icon-button {
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 0;
+}
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 20px;
+  margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
+}
+
+
+.instagram {
+  background-color: rgba(64,153,255,.7);
+}
+.facebook  {
+  background-color: rgba(80,122,189,.7);
+}
+.youtube1 {
+  background-color: rgba(219,90,60,.7);
+}
+.tripadvisor {
+  background-color: rgba(88, 148, 66, .7);
+}
+.youtube {
+  background-color: rgba(203,32,39,.7);
+}
+
+
+/*HOVER*/
+
+.instagram span{
+  background-color: rgba(64,153,255,.7);
+}
+.facebook span {
+  background-color: rgba(80,122,189,.7);
+}
+.youtube1 span {
+  background-color: rgba(219,90,60,.7); 
+}
+.tripadvisor span {
+  background-color: rgba(88, 148, 66, .7);
+}
+.youtube span {
+  background-color: rgba(203,32,39,.7);
+}
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tripadvisor,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+  color: white;
+}
+
+@media all and (max-width: 600px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+  body {
+
+    padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
